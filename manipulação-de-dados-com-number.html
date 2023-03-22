@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--Tag usada para compactibilidade dos diversos caracteres que a língua portuguesa tem-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Para compactibilidade com o internet explore e o edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para compactibilidade de teclado-->
+    <title>Meu primeiro teste</title>
+    <style> 
+        body {
+            background-color: aquamarine;
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1 {
+            color: blueviolet;
+        }
+    </style>
+    <!--Quando eu uso no head (cabeça) a tag <style> tudo o que eu escrever dentro dela não é HTML e sim CSS-->
+</head>
+<body> <!--O <h1></h1> é uma tag para criar título, <p> para criar paragrafos-->
+    <h1>Olá, mundo!</h1>
+    <p>olá, mundo</p>
+    <script>
+       var n1 =Number.parseInt(window.prompt('Digite um número:')) /* No caso de valores numéricos o Js entende o Prompt como string,
+       portanto devemos converter para number*/
+       // Quando ultilizamos o Number.parseInt estados convertende de string para number
+       /* Temos três tipos de conversão:
+       1-Number.ParseInt (para valores inteiros)
+       2-Number.ParseFloat (para valores reais)
+       3-Number (para reias e inteiros)*/
+       var n2 = Number.parseInt(window.prompt('Digite outro número:'))
+       var s = n1 + n2
+       alert(`A soma entre os valores é ${s}`)
+        // No js o + pode significar concatenação ou adição
+        // o barra, barra no Js é usado para colocar comentários em uma linha
+        /* o barra, asterix é umado para comentários
+        em mais de uma linha*/
+    </script>
+    <!--Quando usados a tag <script> antes do fim do corpo (body), ou seja, depois do código base, tudo o que estiver lá dentro é JavaScript-->
+    <!--window.prompt é um comando que pede uma resposta escrita ao client-->
+</body>
+</html>
+
